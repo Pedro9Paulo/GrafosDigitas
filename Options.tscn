@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Options.gd" type="Script" id=1]
+
+[node name="Options" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.663422
+margin_top = -0.663422
+margin_right = -0.663452
+margin_bottom = -0.663452
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tradicional" type="Button" parent="."]
+margin_left = 29.0
+margin_top = 41.0
+margin_right = 75.0
+margin_bottom = 61.0
+text = "Tradicional"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Alternativo" type="Button" parent="."]
+margin_left = 128.513
+margin_top = 40.3366
+margin_right = 210.513
+margin_bottom = 60.3366
+text = "Alternativo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Voltar" type="Button" parent="."]
+margin_left = 336.0
+margin_top = 149.0
+margin_right = 381.0
+margin_bottom = 169.0
+text = "Voltar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Tradicional" to="." method="_on_Tradicional_pressed"]
+[connection signal="pressed" from="Alternativo" to="." method="_on_Alternativo_pressed"]
+[connection signal="pressed" from="Voltar" to="." method="_on_Voltar_pressed"]

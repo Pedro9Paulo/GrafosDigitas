@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://menu.gd" type="Script" id=1]
+
+[node name="menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="."]
+margin_left = 388.424
+margin_top = 187.36
+margin_right = 487.424
+margin_bottom = 231.36
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selection" type="Button" parent="."]
+margin_left = 388.424
+margin_top = 246.147
+margin_right = 487.424
+margin_bottom = 290.147
+text = "Choose"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Config" type="Button" parent="."]
+margin_left = 388.424
+margin_top = 309.614
+margin_right = 487.424
+margin_bottom = 353.614
+text = "Config"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Config" to="." method="_on_Config_pressed"]
